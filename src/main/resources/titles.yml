@@ -1,0 +1,121 @@
+##################################################
+#                                                #
+#               CustomJoinEvents                 #
+#             by _ImJona - v1.3.2                #
+#                                                #
+#   If you have any bugs or suggestions          #
+#  for the plugin, contact me via discord        #
+#              _ImJona#2065                      #
+#                                                #
+##################################################
+#If you want to know more about how to edit this section, visit the official CustomJoinEvents wiki
+#https://eaglemc.gitbook.io/customjoinevents/
+#
+#Choose one of these two options to show how name
+#1. DISPLAY_NAME = It will use the name found in display_name. Example (Menu.items.title1.display_name)
+#2. KEY = It is the name of the path that you entered when creating the event. Example (Menu.items.(key))
+settings_name: 'DISPLAY_NAME'
+#This will be reflected when the user selects an event
+Menu:
+ title_menu: '&bJoin&fEvents &8| &7Titles'
+ size: 45
+ material_no_permission: 'BARRIER'
+ decorations:
+  glass:
+   material: 'GRAY_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot: -1
+  glass_1:
+   material: 'PINK_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot:
+     - 0
+     - 1
+     - 7
+     - 8
+     - 9
+     - 17
+     - 27
+     - 35
+     - 36
+     - 37
+     - 43
+     - 44
+  back:
+    material: 'ARROW'
+    display_name: '&6&l« &aBack'
+    slot: 39
+    enabled: true
+    action_type: 'BACK_MENU_MAIN'
+    lore:
+      - ''
+      - '&6&l| &fClick to return'
+      - ''
+  close:
+    material: 'BARRIER'
+    display_name: '&6&l✦ &cClose &6&l✦'
+    slot: 40
+    sound_on_click: 'CHEST_CLOSE'
+    enabled: true
+    action_type: 'CLOSE_MENU'
+    lore:
+      - ''
+      - '&6&l| &fClick to close this menu'
+      - ''
+ items:
+  default:
+   material: 'EXPERIENCE_BOTTLE'
+   display_name: "&9default"
+   slot: 20
+   title_for_all: false
+   lore:
+    - '&fTitle for everyone'
+    - ''
+    - '&c&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fTitle: &b%titles_title%'
+    - ' &a&l‣ &fSubtitle: &b%titles_subtitle%'
+    - ' &a&l‣ &fStatus: %titles_status_selected%'
+    - ''
+    - '%titles_status_locked%'
+   title: '&a%player%'
+   subtitle: '&fWelcome back to the server'
+   permission: 'customjoinevents.title.default'
+  title1:
+   material: 'EXPERIENCE_BOTTLE'
+   display_name: '&a&lTitle &e#1'
+   title_for_all: true
+   slot: 21
+   lore:
+    - '&fBe the only one to submit unique titles'
+    - ''
+    - '&c&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fTitle: &b%titles_title%'
+    - ' &a&l‣ &fSubtitle: &b%titles_subtitle%'
+    - ' &a&l‣ &fStatus: %titles_status_selected%'
+    - ''
+    - '%titles_status_locked%'
+   title: '&a%player%'
+   subtitle: '&9has joined to ther server'
+   permission: 'customjoinevents.title.title1'
+  title2:
+   material: 'EXPERIENCE_BOTTLE'
+   display_name: '&a&lTitle &e#2'
+   title_for_all: true
+   slot: 22
+   lore:
+    - '&fBe the only one to submit unique titles'
+    - ''
+    - '&c&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fTitle: &b%titles_title%'
+    - ' &a&l‣ &fSubtitle: &b%titles_subtitle%'
+    - ' &a&l‣ &fStatus: %titles_status_selected%'
+    - ''
+    - '%titles_status_locked%'
+   title: '&a%player%'
+   subtitle: '&6has joined'
+   permission: 'customjoinevents.title.title1'

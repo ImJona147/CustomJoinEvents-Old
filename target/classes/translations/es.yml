@@ -1,0 +1,16 @@
+translations:
+  prefix: '&8[&bCustomJoin&fEvents&8] '
+  reload: '%prefix%&aEl plugin ha sido recargado'
+  no_permission: '%prefix%&cLo siento, pero no tienes permisos para ejecutar este comando'
+  save_player_data: '%prefix%&aGuardando los archivos de configuración de los jugadores'
+  locked: '&cBloqueado'
+  unlocked: '&aDesbloqueado'
+  selected: '&aSeleccionado'
+  unselected: '&cSin seleccionar'
+  activated: '&aActivado'
+  disabled: '&cDesactivado'
+  event_no_permission: "%prefix%&cLo siento, pero no tienes permisos para seleccionar &e%event_name%"
+  settings_activated: '%prefix%&aHas activado &e%settings_name%&a nuevamente'
+  settings_disabled: '%prefix%&cHas desactivado &e%settings_name%'
+  event_selected: '%prefix%&aHas seleccionado &e%event_name%'
+  event_unselected: '%prefix%&cHas deseleccionado &e%event_name%'

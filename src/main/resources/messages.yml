@@ -1,0 +1,129 @@
+##################################################
+#                                                #
+#               CustomJoinEvents                 #
+#             by _ImJona - v1.3.2                #
+#                                                #
+#   If you have any bugs or suggestions          #
+#  for the plugin, contact me via discord        #
+#              _ImJona#2065                      #
+#                                                #
+##################################################
+#If you want to know more about how to edit this section, visit the official CustomJoinEvents wiki
+#https://eaglemc.gitbook.io/customjoinevents/
+#
+#Choose one of these two options to show how name
+#1. DISPLAY_NAME = It will use the name found in display_name. Example (Menu.items.message1.display_name)
+#2. KEY = It is the name of the path that you entered when creating the event. Example (Menu.items.(key))
+settings_name: 'DISPLAY_NAME'
+#This will be reflected when the user selects an event
+Menu:
+ title_menu: '&bJoin&fEvents &8| &7Messages'
+ size: 45
+ first_join: '&6✮&l &e%player% &fis new playing on the server. &7(&a#%server_unique_joins%&7)'
+ material_no_permission: 'BARRIER'
+ decorations:
+  glass:
+   material: 'GRAY_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot: -1
+  glass_1:
+   material: 'PINK_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot:
+    - 0
+    - 1
+    - 7
+    - 8
+    - 9
+    - 17
+    - 27
+    - 35
+    - 36
+    - 37
+    - 43
+    - 44
+  back:
+   material: 'ARROW'
+   display_name: '&6&l« &aBack'
+   slot: 39
+   enabled: true
+   action_type: 'BACK_MENU_MAIN'
+   lore:
+    - ''
+    - '&6&l| &fClick to return'
+    - ''
+  close:
+   material: 'BARRIER'
+   display_name: '&6&l✦ &cClose &6&l✦'
+   slot: 40
+   sound_on_click: 'CHEST_CLOSE'
+   enabled: true
+   action_type: 'CLOSE_MENU'
+   lore:
+    - ''
+    - '&6&l| &fClick to close this menu'
+    - ''
+ items:
+  default:
+    material: 'PAPER'
+    display_name: '&9default'
+    slot: 20
+    lore:
+      - '&fMessage to all'
+      - ''
+      - '&d&nCharacteristics:'
+      - ''
+      - ' &a&l‣ &fMessage Join: &b%message_message_join%'
+      - ' &a&l‣ &fMessage Quit: &b%message_message_quit%'
+      - ' &a&l‣ &fStatus: %message_status_selected%'
+      - ''
+      - '%message_status_locked%'
+    message_join: '&7[&a+&7] &9%player%'
+    message_quit: '&7[&c-&7] &9%player%'
+    actionbar_join: ''
+    actionbar_quit: ''
+    permission: 'customjoinevents.message.default'
+  message1:
+   material: 'PAPER'
+   display_name: '&a&lMessage &e#1'
+   slot: 21
+   lore:
+     - '&fStand out from all players'
+     - '&fwith a unique message'
+     - ''
+     - '&d&nCharacteristics:'
+     - ''
+     - ' &a&l‣ &fMessage Join: &b%message_message_join%'
+     - ' &a&l‣ &fMessage Quit: &b%message_message_quit%'
+     - ' &a&l‣ &fActionbar Join: &b%message_actionbar_join%'
+     - ' &a&l‣ &fActionbar Quit: &b%message_actionbar_quit%'
+     - ' &a&l‣ &fStatus: %message_status_selected%'
+     - ''
+     - '%message_status_locked%'
+   message_join: '&c%player% &fhas joined the server'
+   message_quit: '&c%player% &fhas left the server'
+   actionbar_join: '&c%player% &fhas joined the server'
+   actionbar_quit: '&c%player% &fhas left the server'
+   permission: 'customjoinevents.message.message1'
+  message2:
+   material: 'PAPER'
+   display_name: '&a&lMessage &e#2'
+   slot: 22
+   lore:
+    - '&fStand out from all players'
+    - '&fwith a unique message'
+    - ''
+    - '&d&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fMessage Join: &b%message_message_join%'
+    - ' &a&l‣ &fMessage Quit: &b%message_message_quit%'
+    - ' &a&l‣ &fStatus: %message_status_selected%'
+    - ''
+    - '%message_status_locked%'
+   message_join: '&a&l» &e%player% &centered the server'
+   message_quit: '&a&l» &e%player% &clogged out of the server'
+   actionbar_join: ''
+   actionbar_quit: ''
+   permission: 'customjoinevents.message.message2'

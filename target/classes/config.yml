@@ -1,0 +1,107 @@
+##################################################
+#                                                #
+#               CustomJoinEvents                 #
+#             by _ImJona - v1.3.2                #
+#                                                #
+#   If you have any bugs or suggestions          #
+#  for the plugin, contact me via discord        #
+#              _ImJona#2065                      #
+#                                                #
+##################################################
+#The languages currently available are:
+#Spanish: es
+#English: en
+#The plugin places the English language by default, you can change this value to your liking
+# <---- ¡Important! ---->
+#For the changes to be applied correctly, you must restart the server.
+language: en
+#If the option is activated, you will receive notifications when the plugin receives an update
+check_updates: true
+#If this option is enabled, a message will be sent to the console when a new player file is created:
+#Message: New player, creating his configuration file (uuid)
+show_message_on_console_when_new_player_file: true
+#If you want to know more about how to edit this section, visit the official CustomJoinEvents wiki
+#https://eaglemc.gitbook.io/customjoinevents/
+Menu:
+ title_menu: '&bCustomJoin&fEvents &8| &7Main'
+ size: 45
+ decorations:
+  glass:
+   material: 'GRAY_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot: -1
+  glass_1:
+   material: 'PINK_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot:
+    - 0
+    - 1
+    - 7
+    - 8
+    - 9
+    - 17
+    - 27
+    - 35
+    - 36
+    - 37
+    - 43
+    - 44
+  close:
+   material: 'BARRIER'
+   display_name: '&6&l✦ &cClose &6&l✦'
+   slot: 40
+   sound_on_click: 'CHEST_CLOSE'
+   enabled: true
+   action_type: 'CLOSE_MENU'
+   lore:
+    - ''
+    - '&6&l| &fClick to close this menu'
+    - ''
+ items:
+  settings:
+   material: 'COMPARATOR'
+   display_name: '&cSettings'
+   action_type: 'OPEN_MENU_SETTINGS'
+   slot: 20
+   lore:
+    - ''
+    - '&6&l| &fClick to open the settings menu'
+    - ''
+  fireworks:
+   material: 'FIREWORK_ROCKET'
+   display_name: '&aFireworks'
+   action_type: 'OPEN_MENU_FIREWORK'
+   slot: 21
+   lore:
+    - ''
+    - '&6&l| &fClick to open the fireworks menu'
+    - ''
+  sounds:
+   material: 'NOTE_BLOCK'
+   display_name: '&6Sounds'
+   action_type: 'OPEN_MENU_SOUND'
+   slot: 22
+   lore:
+    - ''
+    - '&6&l| &fClick to open the sounds menu'
+    - ''
+  message:
+   material: 'PAPER'
+   display_name: '&3Messages'
+   action_type: 'OPEN_MENU_MESSAGE'
+   slot: 23
+   lore:
+    - ''
+    - '&6&l| &fClick to open the messages menu'
+    - ''
+  title:
+   material: 'BEACON'
+   display_name: '&dTitles'
+   action_type: 'OPEN_MENU_TITLE'
+   slot: 24
+   lore:
+    - ''
+    - '&6&l| &fClick to open the titles menu'
+    - ''

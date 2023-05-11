@@ -1,0 +1,134 @@
+##################################################
+#                                                #
+#               CustomJoinEvents                 #
+#             by _ImJona - v1.3.2                #
+#                                                #
+#   If you have any bugs or suggestions          #
+#  for the plugin, contact me via discord        #
+#              _ImJona#2065                      #
+#                                                #
+##################################################
+#If you want to know more about how to edit this section, visit the official CustomJoinEvents wiki
+#https://eaglemc.gitbook.io/customjoinevents/
+#
+#Choose one of these two options to show how name
+#1. DISPLAY_NAME = It will use the name found in display_name. Example (Menu.items.message.display_name)
+#2. CUSTOM = Use the customizable names, these are at the bottom
+#This will be reflected when a user clicks to toggle, it will be shown in the message that will be sent when doing this action
+settings_name: 'CUSTOM'
+custom_name:
+ message: 'messages'
+ sound: 'sounds'
+ title: 'title'
+ firework: 'fireworks'
+ actionbar: 'actionbar'
+Menu:
+ title_menu: '&bJoin&fEvents &8| &7Settings'
+ size: 45
+ material_no_permission: 'BARRIER'
+ material_disabled: 'GRAY_DYE'
+ decorations:
+  glass:
+   material: 'GRAY_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot: -1
+  glass_1:
+   material: 'PINK_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot:
+     - 0
+     - 1
+     - 7
+     - 8
+     - 9
+     - 17
+     - 27
+     - 35
+     - 36
+     - 37
+     - 43
+     - 44
+  back:
+   material: 'ARROW'
+   display_name: '&6&l« &aBack'
+   slot: 39
+   enabled: true
+   action_type: 'BACK_MENU_MAIN'
+   lore:
+    - ''
+    - '&6&l| &fClick to return'
+    - ''
+  close:
+   material: 'BARRIER'
+   display_name: '&6&l✦ &cClose &6&l✦'
+   slot: 40
+   sound_on_click: 'CHEST_CLOSE'
+   enabled: true
+   action_type: 'CLOSE_MENU'
+   lore:
+    - ''
+    - '&6&l| &fClick to close this menu'
+    - ''
+ items:
+  message:
+   material: 'LIME_DYE'
+   display_name: '&e&l✉ &3&nMessages&e&l ✉'
+   slot: 20
+   lore:
+    - '&fToggle join and quit messages'
+    - ''
+    - '&c&l↬ &fStatus: %options_status_activated%'
+    - ''
+    - '%options_status_locked%'
+    - ''
+   permission: 'customjoinevents.option.message'
+  sound:
+   material: 'LIME_DYE'
+   display_name: '&e&l♫ &9&nSound&e&l ♫'
+   slot: 21
+   lore:
+    - '&fToggle sound on join'
+    - ''
+    - '&c&l↬ &fStatus: %options_status_activated%'
+    - ''
+    - '%options_status_locked%'
+    - ''
+   permission: 'customjoinevents.option.sound'
+  title:
+   material: 'LIME_DYE'
+   display_name: '&e&l♕ &d&nTitles&e&l ♕'
+   slot: 22
+   lore:
+    - '&fToggle titles on join'
+    - ''
+    - '&c&l↬ &fStatus: %options_status_activated%'
+    - ''
+    - '%options_status_locked%'
+    - ''
+   permission: 'customjoinevents.option.title'
+  firework:
+   material: 'LIME_DYE'
+   display_name: '&e&l✹ &6&nFirework&e&l ✹'
+   slot: 23
+   lore:
+    - '&fToggle fireworks on join'
+    - ''
+    - '&c&l↬ &fStatus: %options_status_activated%'
+    - ''
+    - '%options_status_locked%'
+    - ''
+   permission: 'customjoinevents.option.firework'
+  actionbar:
+   material: 'LIME_DYE'
+   display_name: '&e&l♥ &a&nActionBar&e&l ♥'
+   slot: 24
+   lore:
+    - '&fToggle action bar on join and quit'
+    - ''
+    - '&c&l↬ &fStatus: %options_status_activated%'
+    - ''
+    - '%options_status_locked%'
+    - ''
+   permission: 'customjoinevents.option.actionbar'

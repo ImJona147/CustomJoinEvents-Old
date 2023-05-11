@@ -1,0 +1,119 @@
+##################################################
+#                                                #
+#               CustomJoinEvents                 #
+#             by _ImJona - v1.3.2                #
+#                                                #
+#   If you have any bugs or suggestions          #
+#  for the plugin, contact me via discord        #
+#              _ImJona#2065                      #
+#                                                #
+##################################################
+#If you want to know more about how to edit this section, visit the official CustomJoinEvents wiki
+#https://eaglemc.gitbook.io/customjoinevents/
+#
+#Choose one of these two options to show how name
+#1. DISPLAY_NAME = It will use the name found in display_name. Example (Menu.items.firework1.display_name)
+#2. KEY = It is the name of the path that you entered when creating the event. Example (Menu.items.(key))
+settings_name: 'DISPLAY_NAME'
+#This will be reflected when the user selects an event
+Menu:
+ title_menu: '&bJoin&fEvents &8| &7Fireworks'
+ size: 45
+ material_no_permission: 'BARRIER'
+ decorations:
+  glass:
+   material: 'GRAY_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot: -1
+  glass_1:
+   material: 'PINK_STAINED_GLASS_PANE'
+   display_name: ' '
+   enabled: true
+   slot:
+    - 0
+    - 1
+    - 7
+    - 8
+    - 9
+    - 17
+    - 27
+    - 35
+    - 36
+    - 37
+    - 43
+    - 44
+  back:
+   material: 'ARROW'
+   display_name: '&6&l« &aBack'
+   slot: 39
+   enabled: true
+   action_type: 'BACK_MENU_MAIN'
+   lore:
+    - ''
+    - '&6&l| &fClick to return'
+    - ''
+  close:
+   material: 'BARRIER'
+   display_name: '&6&l✦ &cClose &6&l✦'
+   slot: 40
+   sound_on_click: 'CHEST_CLOSE'
+   enabled: true
+   action_type: 'CLOSE_MENU'
+   lore:
+    - ''
+    - '&6&l| &fClick to close this menu'
+    - ''
+ items:
+  firework1:
+   material: 'TEXTURE-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQzZGM1NDEzMDI2YzJlYmNjOWFlNmFhMTk2NDUxMWVlMTQ1MzhhMWFkNGExMGFkY2Y2OTkxMzRkNTdkYmI5In19fQ=='
+   display_name: '&a&lFirework &e#1'
+   slot: 20
+   lore:
+    - '&fUse this firework to stand out from the rest'
+    - ''
+    - '&9&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fType: &b%firework_type%'
+    - ' &a&l‣ &fColors: &b%firework_colors%'
+    - ' &a&l‣ &fFade: &b%firework_fade%'
+    - ' &a&l‣ &fStatus: %firework_status_selected%'
+    - ''
+    - '%firework_status_locked%'
+   firework_type: 'Type:CREEPER;Colors:RED,BLUE;Fade:GREEN,YELLOW;Power:2;Amount:1'
+   permission: 'customjoinevents.firework.firework1'
+  firework2:
+   material: 'TEXTURE-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQzZGM1NDEzMDI2YzJlYmNjOWFlNmFhMTk2NDUxMWVlMTQ1MzhhMWFkNGExMGFkY2Y2OTkxMzRkNTdkYmI5In19fQ=='
+   display_name: '&a&lFirework &e#2'
+   slot: 21
+   lore:
+    - '&fUse this firework to stand out from the rest'
+    - ''
+    - '&9&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fType: &b%firework_type%'
+    - ' &a&l‣ &fColors: &b%firework_colors%'
+    - ' &a&l‣ &fFade: &b%firework_fade%'
+    - ' &a&l‣ &fStatus: %firework_status_selected%'
+    - ''
+    - '%firework_status_locked%'
+   firework_type: 'Type:STAR;Colors:GREEN,FUCHSIA;Fade:LIME,OLIVE;Power:1;Amount:2'
+   permission: 'customjoinevents.firework.firework2'
+  fantastic_firework:
+   material: 'TEXTURE-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQzZGM1NDEzMDI2YzJlYmNjOWFlNmFhMTk2NDUxMWVlMTQ1MzhhMWFkNGExMGFkY2Y2OTkxMzRkNTdkYmI5In19fQ=='
+   display_name: '&9&lFantastic Firework &a&lッ'
+   slot: 22
+   lore:
+    - '&fThis is a super firework'
+    - '&fit will not go unnoticed'
+    - ''
+    - '&9&nCharacteristics:'
+    - ''
+    - ' &a&l‣ &fType: &b%firework_type%'
+    - ' &a&l‣ &fColors: &b%firework_colors%'
+    - ' &a&l‣ &fFade: &b%firework_fade%'
+    - ' &a&l‣ &fStatus: %firework_status_selected%'
+    - ''
+    - '%firework_status_locked%'
+   firework_type: 'Type:BALL_LARGE;Colors:GREEN,MAROON;Fade:WHITE,PURPLE;Power:2;Amount:3'
+   permission: 'customjoinevents.firework.fantasticfirework'
